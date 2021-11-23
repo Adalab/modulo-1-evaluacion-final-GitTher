@@ -3,66 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Anonymous Proxy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
   </head>
 
   <body>
     <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
+      <header id="header" class="header">
+        <a class="menu" href="https://adalab.es" target="_blank">
+          <img
+            src="./assets/images/ico-menu.svg"
+            alt="burger-menu"
+            title="burger-menu"
+          />
+        </a>
+        <section class="hero">
+          <h1 class="hero__title">Anonymous Proxy</h1>
+          <h2 class="hero__claim">In hac habitasse platea dictumst.</h2>
+          <a class="hero__button" href="#reasons">
+            <img
+              src="./assets/images/ico-scroll-down.svg"
+              alt="scroll-down"
+              title="scroll-down"
+            />
+          </a>
+        </section>
       </header>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+      <main class="main">
+        <section class="window">
+          <p class="window__tips">Insomnia Tips</p>
+          <h3 class="window__title">Looking through a window</h3>
+          <p class="window__text">
+            Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
+            luctus ex diam nec lectus. Vivamus semper sodales rutrum.
+          </p>
+          <button class="window__button">Go</button>
+        </section>
+        <section id="reasons" class="reasons">
+          <h3 class="reasons__title">3 Reasons To Purchase</h3>
+          <article class="reasons__article--first">
+            <h4 class="reasons__article--title">Ut sed metus</h4>
+            <p class="reasons__article--text">Lorem ipsum dolor sit amet, consecteur.</p>
+          </article>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+          <article class="reasons__article--second">
+            <h4 class="reasons__article--title">Curabitur ac erat</h4>
+            <p class="reasons__article--text">Mauris mattis urna quis lorem molestie.</p>
+          </article>
 
-          </li>
-        </ul>
+          <article class="reasons__article--third">
+            <h4 class="reasons__article--title">Morbi dictum</h4>
+            <p class="reasons__article--text">Aliquam in dolor et dolor tincidunt.</p>
+          </article>
+
+          <button class="reasons__button">More reasons</button>
+        </section>
       </main>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-        </small>
+      <footer class="footer">
+        <a class="footer__button" href="#header">
+          <img
+            src="./assets/images/ico-arrow.svg"
+            alt="scroll-down"
+            title="scroll-down"
+          />
+        </a>
+        <nav>
+          <ul class="nav">
+            <li>
+              <a class="nav__item" href="https://adalab.es" target="_blank"
+                >Articles</a
+              >
+            </li>
+            <li>
+              <a class="nav__item" href="https://adalab.es" target="_blank">Books</a>
+            </li>
+            <li>
+              <a class="nav__item" href="https://adalab.es" target="_blank">Events</a>
+            </li>
+            <li>
+              <a class="nav__item" href="https://adalab.es" target="_blank"
+                >Reasons</a
+              >
+            </li>
+            <li>
+              <a class="nav__item" href="https://adalab.es" target="_blank">Tips</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="social">
+          <ul>
+            <li>
+              <a class="social__item" href="https://adalab.es" target="_blank"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a class="social__item" href="https://adalab.es" target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a class="social__item" href="https://adalab.es" target="_blank"
+                >Mastodon.social</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <section class="copyright">
+          <p class="copyright__year">&copy;2021</p>
+          <p class="copyright__claim">
+            we <span class="copyright__claim--heart">❤︎</span> components
+          </p>
+        </section>
       </footer>
 
     </div>
-    <script src="./assets/js/main.js"></script>
   </body>
 </html>
