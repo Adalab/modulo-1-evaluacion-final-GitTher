@@ -36,6 +36,11 @@
     text-align: center;
     text-transform: uppercase;
     margin-top: 70%;
+
+    @include tablet {
+      font-size: 80px;
+      line-height: 106px;
+    }
   }
 
   &__claim {
@@ -44,6 +49,10 @@
     font-weight: 400;
     font-size: 16px;
     text-align: center;
+
+    @include tablet {
+      font-size: 24px;
+    }
   }
 
   &__button {
