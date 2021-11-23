@@ -21,31 +21,21 @@
 }
 
 .nav__item {
-  @include navFooter;
+  @include footerNav;
   text-align: center;
 }
 
 .social__item {
-  @include navFooter;
+  @include footerNav;
   text-align: center;
 }
 
 .copyright__year {
-  font-family: $font_text;
-  font-size: 14px;
-  font-weight: 400;
-  color: $color_white;
-  text-align: center;
-  line-height: 30px;
+  @include footerCopyright;
 }
 
 .copyright__claim {
-  font-family: $font_text;
-  font-size: 14px;
-  font-weight: 400;
-  color: $color_white;
-  text-align: center;
-  line-height: 30px;
+  @include footerCopyright;
   &--heart {
     color: $color_primary;
   }
