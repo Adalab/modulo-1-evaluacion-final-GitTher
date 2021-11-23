@@ -1,0 +1,57 @@
+.header {
+  height: 100vh;
+  background: url(../images/cover.jpg) center/cover no-repeat;
+}
+
+.menu {
+  box-sizing: border-box;
+  background-color: $color_secondary;
+  width: 44px;
+  height: 44px;
+  padding: 15px 14px;
+  position: fixed;
+  top: 0;
+}
+
+.hero {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-blend-mode: multiply;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.1),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+
+.hero__title {
+  color: $color_white;
+  font-family: $font_title;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 55px;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 2px 3px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 70%;
+}
+
+.hero__claim {
+  color: $color_white;
+  font-family: $font_text;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+.hero__button {
+  box-sizing: border-box;
+  background-color: $color_white;
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+  padding: 18px 12px 15.3px 13px;
+}
