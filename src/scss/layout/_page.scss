@@ -10,6 +10,10 @@
     font-size: 14px;
     color: $color_light;
     line-height: 30px;
+
+    @include desktop {
+      font-size: 16px;
+    }
   }
 
   &__title {
@@ -32,10 +36,17 @@
 
   &__button {
     @include mainButton(solid 2px $color_primary, $color_white, $color_primary);
+    @include desktop {
+      width: 160px;
+    }
   }
 
   @include tablet {
     padding: 30px 39px 60px 39px;
+  }
+
+  @include desktop {
+    padding: 70px 275px 70px 275px;
   }
 }
 
@@ -104,6 +115,11 @@
     @include tablet {
       grid-row: 3/4;
     }
+    @include desktop {
+      text-transform: capitalize;
+      width: 255px;
+      justify-self: center;
+    }
   }
 
   @include tablet {
@@ -111,5 +127,10 @@
     grid-template-rows: 45px 1fr 45px;
     column-gap: 27.7px;
     padding: 30px 40px 60px 40px;
+  }
+
+  @include desktop {
+    column-gap: 26.2px;
+    padding: 60px 85px 60px 85px;
   }
 }

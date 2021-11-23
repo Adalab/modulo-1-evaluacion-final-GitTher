@@ -25,6 +25,10 @@
     font-size: 26px;
     line-height: 45px;
   }
+  @include desktop {
+    font-size: 32px;
+    line-height: 45px;
+  }
 }
 
 @mixin mainArticle($fontFamily, $fontSize, $fontWeight) {

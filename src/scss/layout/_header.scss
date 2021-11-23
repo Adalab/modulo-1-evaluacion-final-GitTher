@@ -41,6 +41,13 @@
       font-size: 80px;
       line-height: 106px;
     }
+
+    @include desktop {
+      font-size: 100px;
+      line-height: 132px;
+      margin-top: 35%;
+      width: 730px;
+    }
   }
 
   &__claim {
