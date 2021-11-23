@@ -11,27 +11,6 @@
   }
 }
 
-//Footer
-
-@mixin footerNav {
-  font-family: $font_text;
-  font-size: 16px;
-  font-weight: 400;
-  color: $color_white;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 30px;
-}
-
-@mixin footerCopyright {
-  font-family: $font_text;
-  font-size: 14px;
-  font-weight: 400;
-  color: $color_white;
-  text-align: center;
-  line-height: 30px;
-}
-
 //Page
 
 @mixin mainTitle {
@@ -70,4 +49,25 @@
   border: $borderStyles;
   background-color: $backgroundColor;
   color: $fontColor;
+}
+
+//Footer
+
+@mixin footerNav {
+  font-family: $font_text;
+  font-size: 16px;
+  font-weight: 400;
+  color: $color_white;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+@mixin footerCopyright {
+  font-family: $font_text;
+  font-size: 14px;
+  font-weight: 400;
+  color: $color_white;
+  text-align: center;
+  line-height: 30px;
 }
