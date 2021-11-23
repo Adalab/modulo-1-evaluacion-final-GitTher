@@ -41,11 +41,16 @@
   color: $color_black;
   line-height: 30px;
   text-transform: capitalize;
+
+  @include tablet {
+    font-size: 26px;
+    line-height: 45px;
+  }
 }
 
-@mixin mainArticle($fontFamily, $fontWeight) {
+@mixin mainArticle($fontFamily, $fontSize, $fontWeight) {
   font-family: $fontFamily;
-  font-size: 18px;
+  font-size: $fontSize;
   font-weight: $fontWeight;
   color: $color_black;
   line-height: 30px;
