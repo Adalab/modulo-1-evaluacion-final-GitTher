@@ -1,4 +1,4 @@
-//Responsive
+/*-------- responsive --------*/
 
 @mixin tablet {
   @media (min-width: 768px) {
@@ -11,13 +11,13 @@
   }
 }
 
-//Page
+/*-------- page --------*/
 
 @mixin mainTitle {
-  font-family: $font_title;
+  font-family: $fontTitle;
   font-weight: 700;
   font-size: 24px;
-  color: $color_black;
+  color: $colorBlack;
   line-height: 30px;
   text-transform: capitalize;
 
@@ -31,47 +31,48 @@
   }
 }
 
-@mixin mainArticle($fontFamily, $fontSize, $fontWeight) {
+@mixin mainArticle($fontFamily, $fontWeight, $fontSize) {
   font-family: $fontFamily;
-  font-size: $fontSize;
   font-weight: $fontWeight;
-  color: $color_black;
+  font-size: $fontSize;
+  color: $colorBlack;
   line-height: 30px;
   text-align: center;
 }
 
 @mixin mainButton($borderStyles, $backgroundColor, $fontColor) {
   height: 45px;
-  border-radius: 22.5px;
   margin-top: 30px;
-  font-family: $font_text;
-  font-size: 20px;
-  font-weight: 500;
-  text-align: center;
   padding-left: 25px;
   padding-right: 25px;
+  border-radius: 22.5px;
   border: $borderStyles;
   background-color: $backgroundColor;
+  font-family: $fontText;
+  font-weight: 500;
+  font-size: 20px;
   color: $fontColor;
+  text-align: center;
+  transition: all ease 0.5s;
 }
 
-//Footer
+/*-------- footer --------*/
 
 @mixin footerNav {
-  font-family: $font_text;
-  font-size: 16px;
+  font-family: $fontText;
   font-weight: 400;
-  color: $color_white;
+  font-size: 16px;
+  color: $colorWhite;
+  line-height: 30px;
   text-transform: uppercase;
   text-decoration: none;
-  line-height: 30px;
 }
 
 @mixin footerCopyright {
-  font-family: $font_text;
-  font-size: 14px;
+  font-family: $fontText;
   font-weight: 400;
-  color: $color_white;
-  text-align: center;
+  font-size: 14px;
+  color: $colorWhite;
   line-height: 30px;
+  text-align: center;
 }

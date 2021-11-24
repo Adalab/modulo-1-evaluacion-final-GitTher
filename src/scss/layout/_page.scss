@@ -1,14 +1,14 @@
-//-------- window section --------
+/*-------- window section --------*/
 
 .window {
   padding: 30px 15px 45px 15px;
-  background-color: $color_white;
+  background-color: $colorWhite;
 
   &__tips {
-    font-family: $font_text;
+    font-family: $fontText;
     font-weight: 400;
     font-size: 14px;
-    color: $color_light;
+    color: $colorLight;
     line-height: 30px;
 
     @include desktop {
@@ -21,10 +21,10 @@
   }
 
   &__text {
-    font-family: $font_text;
-    font-weight: 400px;
+    font-family: $fontText;
+    font-weight: 400;
     font-size: 18px;
-    color: $color_text;
+    color: $colorGrey;
     line-height: 30px;
     margin-top: 15px;
 
@@ -35,11 +35,10 @@
   }
 
   &__button {
-    @include mainButton(solid 2px $color_primary, $color_white, $color_primary);
-    transition: all ease 0.5s;
+    @include mainButton(solid 2px $colorPrimary, $colorWhite, $colorPrimary);
     &:hover {
-      color: $color_dark;
-      border-color: $color_dark;
+      color: $colorDark;
+      border-color: $colorDark;
       transform: translateY(-3px);
       box-shadow: 0 2px 4px 0 rgba($color: #000000, $alpha: 0.5);
     }
@@ -57,7 +56,7 @@
   }
 }
 
-//-------- reasons section --------
+/*-------- reasons section --------*/
 
 .reasons {
   display: grid;
@@ -65,7 +64,7 @@
   grid-template-rows: 30px repeat(3, 1fr) 45px;
   row-gap: 45px;
   padding: 30px 15px 60px 15px;
-  background-color: $color_lighter;
+  background-color: $colorLighter;
 
   &__title {
     @include mainTitle;
@@ -76,15 +75,15 @@
 
   &__article {
     &--title {
-      @include mainArticle($font_title, 18px, 700);
+      @include mainArticle($fontTitle, 700, 18px);
       @include tablet {
-        @include mainArticle($font_title, 24px, 700);
+        font-size: 24px;
       }
     }
     &--text {
-      @include mainArticle($font_text, 18px, 400);
+      @include mainArticle($fontText, 400, 18px);
       @include tablet {
-        @include mainArticle($font_text, 20px, 400);
+        font-size: 20px;
         margin-top: 14px;
       }
     }
@@ -115,13 +114,12 @@
   }
 
   &__button {
-    @include mainButton(none, $color_primary, $color_white);
+    @include mainButton(none, $colorPrimary, $colorWhite);
     grid-column: 2/3;
     grid-row: 5/6;
     margin: 0;
-    transition: all ease 0.5s;
     &:hover {
-      background-color: $color_dark;
+      background-color: $colorDark;
       transform: translateY(-3px);
       box-shadow: 0 2px 4px 0 rgba($color: #000000, $alpha: 0.5);
     }
