@@ -29,6 +29,6 @@ It features a responsive home page developed from a zeplin prototype.
 
 ## Demo
 
-[View Demo](http://beta.adalab.es/modulo-1-evaluacion-final-GitTher/)
+[View Demo](http://gitther.github.io/modulo-1-evaluacion-final-GitTher/)
 
 
